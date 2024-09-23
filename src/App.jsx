@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import NavbarSmall from './components/NavbarSmall';
 import { useState, useEffect } from "react";
 import PopularDestinations from './components/PopularDestinations';
+import RecentTrips from './components/RecentTrips';
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
       <MainImage/>
       {(isSmall) ? <NavbarSmall/> : <Navbar/>}
       <PopularDestinations/>
+      <RecentTrips/>
     </>
   )
 }

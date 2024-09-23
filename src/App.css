@@ -1,5 +1,8 @@
 body {
-  height: 3000px;
+  height: 4000px;
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -50,6 +53,7 @@ body {
   height: 6rem;
   background-color: white;
   border-radius: 1rem;
+  z-index: 10;
 
   display: flex;
   align-items: center;
@@ -375,4 +379,50 @@ body {
   .pdi-mobile {
     display: none;
   }
+}
+
+.recent-trips {
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+}
+
+.recent-trips-title {
+  width: 100%;
+}
+
+.recent-trips-title h1 {
+  margin-top: 5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.recent-trips-title h5 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.recent-trips-examples {
+  display: flex;
+  gap: 2rem;
+}
+
+.recent-trips-card {
+  background-color: white;
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recent-trips-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.recent-trips-card p {
+  font-size: 1.25rem;
 }
