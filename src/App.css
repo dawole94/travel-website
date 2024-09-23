@@ -1,0 +1,378 @@
+body {
+  height: 3000px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-image-div {
+  background-image: url("C:/Users/dawol/OneDrive/Pulpit/travelWebsite/travel-website/src/images/front-picture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-image-div h1 {
+  font-size: 3rem;
+  color: white
+}
+
+.main-image-div p {
+  font-size: 1.5rem;
+  color: white
+}
+
+.main-image-div button {
+  font-weight: bold;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 1.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  height: 6rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navbar .left {
+  font-size: 2.5rem;
+}
+
+.navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbar .right ul {
+  display: flex;
+  list-style-type: none;
+  gap:5rem;
+}
+
+.navbar .right ul li a {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar .right button {
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+
+}
+
+.collapsed-navbar-small {
+  position: fixed;
+  top: 1.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  height: 6rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.expanded-navbar-small {
+  position: fixed;
+  top: 1.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  height: calc(100vh - 3rem);
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.expanded-navbar-small-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.expanded-navbar-small a {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem
+}
+
+.expanded-navbar-small button {
+  padding: 1.5rem 5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: green;
+}
+
+.collapsed-navbar-small h1, .expanded-navbar-small-top h1 {
+  font-size: 2.5rem;
+}
+
+.hamburger-menu, .cross {
+  font-size: 2rem;
+}
+
+@media (min-width: 640px) {
+  .expanded-navbar-small a {
+    font-size: 4rem;
+  }
+
+  .expanded-navbar-small button {
+    font-size: 4rem;
+  }
+
+  .collapsed-navbar-small h1 {
+    font-size: 4rem;
+  }
+
+  .expanded-navbar-small-top h1 {
+    font-size: 5rem;
+  }
+
+  .collapsed-navbar-small .hamburger-menu, .collapsed-navbar-small .cross {
+    font-size: 4rem;
+  }
+
+  .expanded-navbar-small .hamburger-menu, .expanded-navbar-small .cross {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .expanded-navbar-small a {
+    font-size: 2.5rem;
+  }
+
+  .expanded-navbar-small button {
+    font-size: 2.5rem;
+  }
+
+  .collapsed-navbar-small h1, .expanded-navbar-small-top h1 {
+    font-size: 3rem;
+  }
+
+  .hamburger-menu, .cross {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .pop-dest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pop-dest-title {
+    width: 80%;
+  }
+  
+  .two-pop-dest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    width: 80%;
+  }
+  
+  .pop-dest h1 {
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .pop-dest h5 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  .first-pop-dest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .volcano-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+  }
+  
+  .second-pop-dest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mount-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+    margin-top: 1.25rem
+  }
+  
+  .pop-dest h2 {
+    font-size: 2rem;
+  }
+  
+  .pop-dest p {
+    font-size: 1.25rem;
+  }
+  
+  .pop-dest-images {
+    display: flex;
+    height: 17rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .pop-dest-images img {
+    width: 38vw;
+    height: 15rem;
+    object-fit: cover;
+  }
+  
+  .image-top {
+    align-self: flex-start;
+  }
+
+  .image-bottom {
+    align-self: flex-end;
+  }
+
+  .pdi-normal {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .pop-dest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  
+  .two-pop-dest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 3rem;
+    width: 80%;
+  }
+  
+  .pop-dest h1 {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+  
+  .pop-dest h5 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  .first-pop-dest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .volcano-text {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    gap: 1.25rem;
+  }
+  
+  .second-pop-dest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mount-text {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    gap: 1.25rem;
+  }
+  
+  .pop-dest h2 {
+    font-size: 2rem;
+  }
+  
+  .pop-dest p {
+    font-size: 1.25rem;
+  }
+  
+  .pop-dest-images {
+    display: flex;
+    gap: 1rem;
+    height: 28rem;
+  }
+  
+  .pop-dest-images img {
+    width: 21vw;
+    height: 25rem;
+    object-fit: cover;
+  }
+  
+  .image-top {
+    align-self: flex-start;
+  }
+  
+  .image-bottom {
+    align-self: flex-end;
+  }
+
+  .pdi-mobile {
+    display: none;
+  }
+}
