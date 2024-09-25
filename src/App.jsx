@@ -6,6 +6,7 @@ import NavbarSmall from './components/NavbarSmall';
 import { useState, useEffect } from "react";
 import PopularDestinations from './components/PopularDestinations';
 import RecentTrips from './components/RecentTrips';
+import BottomSection from './components/BottomSection';
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
       {(isSmall) ? <NavbarSmall/> : <Navbar/>}
       <PopularDestinations/>
       <RecentTrips/>
+      <BottomSection/>
     </>
   )
 }
