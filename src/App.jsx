@@ -1,38 +1,15 @@
-import React from 'react'
-import './App.css'
-import MainImage from './components/MainImage'
-import Navbar from './components/Navbar'
-import NavbarSmall from './components/NavbarSmall';
-import { useState, useEffect } from "react";
-import PopularDestinations from './components/PopularDestinations';
-import RecentTrips from './components/RecentTrips';
-import BottomSection from './components/BottomSection';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
 
-function App() {
-  
-  const [isSmall, setIsSmall] = useState(window.innerWidth <= 1028);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmall(window.innerWidth <= 1028);
-    };
-
-    window.addEventListener('resize', handleResize);
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+export default function App() {
   return (
-    <>
-      <MainImage/>
-      {(isSmall) ? <NavbarSmall/> : <Navbar/>}
-      <PopularDestinations/>
-      <RecentTrips/>
-      <BottomSection/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App

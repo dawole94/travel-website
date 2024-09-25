@@ -73,7 +73,7 @@ body {
 .navbar .right ul {
   display: flex;
   list-style-type: none;
-  gap:5rem;
+  gap:3rem;
 }
 
 .navbar .right ul li a {
@@ -81,6 +81,18 @@ body {
   align-items: center; 
   gap: 1rem;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .right ul li {
+  padding: 1rem 2rem;
+}
+
+.navbar .right ul li:hover {
+  background-color: rgb(97, 199, 194);
+  border-radius: 0.25rem;
+  transition: 0.5s;
 }
 
 .navbar .right button {

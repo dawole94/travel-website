@@ -12,10 +12,10 @@ function Navbar() {
       <h1 className="left">Trippy</h1>
       <div className="right">
         <ul>
-          <li><a><IoMdHome /> Home</a></li>
-          <li><a><IoInformationCircleSharp /> About</a></li>
-          <li><a><FaBriefcase /> Service</a></li>
-          <li><a><IoMdContact /> Contact</a></li>
+          <li><a href="http://localhost:5173/"><IoMdHome /> Home</a></li>
+          <li><a href="http://localhost:5173/about"><IoInformationCircleSharp /> About</a></li>
+          <li><a href="http://localhost:5173/service"><FaBriefcase /> Service</a></li>
+          <li><a href="http://localhost:5173/contact"><IoMdContact /> Contact</a></li>
         </ul>
         <button>Sign Up</button>
       </div>
