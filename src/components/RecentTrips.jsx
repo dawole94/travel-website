@@ -1,11 +1,11 @@
 import React from 'react';
 import RecentTripsCard from './RecentTripsCard';
 
-export default function RecentTrips() {
+export default function RecentTrips({marginTop}) {
   return(
     <div className='recent-trips'>
       <div className="recent-trips-title">
-        <h1>Recent Trips</h1>
+        <h1 style={{marginTop: marginTop}}>Recent Trips</h1>
         <h5>You can discover unique destinations using Google Maps.</h5>
       </div>
       <div className="recent-trips-examples">

@@ -6,7 +6,7 @@ import Paragraph from './Paragraph';
 export default function About() {
   return(
     <>
-      <FrontImage bgImage="./src/images/lanterns.jpg" pageTitle="About" fontSize='3rem' letterSpacing='0.2rem'/>
+      <FrontImage bgImage="./src/images/lanterns.jpg" pageTitle="About" fontSize='3rem' letterSpacing='0.2rem' marginBottom='4.5rem'/>
       <div className="about-container">
         <div className="about-paragraphs">
           <Paragraph title="Our History" desc="Etiam orci libero, pretium id commodo vel, consectetur sit amet urna. Fusce non nunc luctus, semper quam nec, varius sapien. Pellentesque ac viverra neque. Phasellus sodales vestibulum nibh. Nunc ut eros accumsan arcu imperdiet ornare a eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In placerat tempus varius. Donec ac ornare enim. Nulla viverra a dolor nec tincidunt. Maecenas et augue at neque cursus eleifend mattis vel enim. Phasellus eu tristique ligula. Mauris vel urna sit amet diam posuere egestas. Aliquam erat volutpat. Mauris ac gravida libero."/>

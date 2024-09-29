@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FrontImage({bgImage, pageTitle, fontSize, letterSpacing}) {
+export default function FrontImage({bgImage, pageTitle, fontSize, letterSpacing, marginBottom}) {
 
   const bgStyles = {
     backgroundImage: `url(${bgImage})`,
@@ -14,7 +14,7 @@ export default function FrontImage({bgImage, pageTitle, fontSize, letterSpacing}
     justifyContent: 'center',
     alignItems: 'center',
 
-    marginBottom: '4.5rem'
+    marginBottom: marginBottom
   }
 
   const pageTitleStyles = {

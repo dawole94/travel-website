@@ -327,7 +327,8 @@ body {
   
   .pop-dest h1 {
     margin-top: 5rem;
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: center;
   }
   
   .pop-dest h5 {
@@ -405,12 +406,11 @@ body {
 }
 
 .recent-trips-title {
-  width: 100%;
+  width: 80%;
 }
 
 .recent-trips-title h1 {
-  margin-top: 5rem;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
