@@ -26,10 +26,10 @@ function ExpandedNavbarSmall({setShowExpanded}) {
         <h1>Trippy</h1>
         <RxCross1 className="cross" onClick={handleHideExpanded}/>
       </div>
-      <a><IoMdHome /> Home</a>
-      <a><IoInformationCircleSharp /> About</a>
-      <a><FaBriefcase /> Service</a>
-      <a><IoMdContact /> Contact</a>
+      <a href="http://localhost:5173/"><IoMdHome /> Home</a>
+      <a href="http://localhost:5173/about"><IoInformationCircleSharp /> About</a>
+      <a href="http://localhost:5173/service"><FaBriefcase /> Service</a>
+      <a href="http://localhost:5173/contact"><IoMdContact /> Contact</a>
       <button>Sign Up</button>
     </div>
   )

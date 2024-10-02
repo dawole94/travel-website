@@ -1,12 +1,7 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { IoMdHome } from "react-icons/io";
-import { IoInformationCircleSharp } from "react-icons/io5";
-import { FaBriefcase } from "react-icons/fa6";
-import { IoMdContact } from "react-icons/io";
+import { useState } from "react";
 import CollapsedNavbarSmall from "./CollapsedNavbarSmall";
 import ExpandedNavbarSmall from "./ExpandedNavbarSmall";
-import { RxFace } from "react-icons/rx";
 
 function NavbarSmall() {
 

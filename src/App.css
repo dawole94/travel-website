@@ -149,7 +149,10 @@ body {
   font-size: 2rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem
+  gap: 1.5rem;
+  text-decoration: none;
+  color: black;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .expanded-navbar-small button {
