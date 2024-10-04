@@ -4,7 +4,6 @@ import { IoMdHome } from "react-icons/io";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import { FaBriefcase } from "react-icons/fa6";
 import { IoMdContact } from "react-icons/io";
-import { RxCross1 } from "react-icons/rx";
 
 function ExpandedNavbarSmall() {
 

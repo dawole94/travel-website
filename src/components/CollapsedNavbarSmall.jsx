@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 
-function CollapsedNavbarSmall({showExpandedMenu, hideExpandedMenu}) {
+function CollapsedNavbarSmall({toggleMenu}) {
 
   // function hideText() {
   //   document.querySelector(".main-image-div h1").style.opacity = 0;
@@ -19,21 +19,16 @@ function CollapsedNavbarSmall({showExpandedMenu, hideExpandedMenu}) {
 
   const [isHamburger, setIsHamburger] = useState(true)
 
-  function handleHamburgerClick() {
-    setIsHamburger(false);
-    showExpandedMenu();
-  }
-
-  function handleCrossClick() {
-    setIsHamburger(true);
-    hideExpandedMenu();
+  function handleClick() {
+    setIsHamburger(!isHamburger);
+    toggleMenu();
   }
   
 
   return(
     <div className="collapsed-navbar-small">
       <h1>Trippy</h1>
-      {isHamburger ? <RxHamburgerMenu className="hamburger-menu" onClick={handleHamburgerClick}/> : <RxCross1 className="cross" onClick={handleCrossClick}/>}
+      {isHamburger ? <RxHamburgerMenu className="hamburger-menu" onClick={handleClick}/> : <RxCross1 className="cross" onClick={handleClick}/>}
     </div>
   )
 }
