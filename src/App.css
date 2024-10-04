@@ -135,7 +135,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  z-index: 10;
+  z-index: 9;
 }
 
 .expanded-navbar-small-top {
@@ -666,4 +666,12 @@ body {
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+.collapsed {
+  z-index: 20;
+}
+
+.expanded {
+  z-index: 10;
 }

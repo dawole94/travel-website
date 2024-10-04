@@ -1,15 +1,28 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CollapsedNavbarSmall from "./CollapsedNavbarSmall";
 import ExpandedNavbarSmall from "./ExpandedNavbarSmall";
 
 function NavbarSmall() {
 
   const [showExpanded, setShowExpanded] = useState(false);
+  
+  function showExpandedMenu() {
+    setShowExpanded(true);
+  }
+
+  function hideExpandedMenu() {
+    setShowExpanded(false);
+  }
 
   return(
     <>
-      {showExpanded ? <ExpandedNavbarSmall setShowExpanded={setShowExpanded}/> : <CollapsedNavbarSmall setShowExpanded={setShowExpanded}/>}
+      <CollapsedNavbarSmall showExpandedMenu={showExpandedMenu} hideExpandedMenu={hideExpandedMenu}/>
+       {/*  showExpanded ? <ExpandedNavbarSmall setShowExpanded={setShowExpanded}/> : <CollapsedNavbarSmall setShowExpanded={setShowExpanded} className="collapsed"/>}  */
+       }
+       {
+        showExpanded ? <ExpandedNavbarSmall/> : null
+       }
     </>
   )
 }
