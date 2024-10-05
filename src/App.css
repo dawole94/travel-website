@@ -32,7 +32,8 @@ body {
 
 .main-image-div p {
   font-size: 1.5rem;
-  color: white
+  color: white;
+  width: 80%;
 }
 
 .main-image-div button {
@@ -106,8 +107,8 @@ body {
 .collapsed-navbar-small {
   position: fixed;
   top: 1.5rem;
-  left: 2.5rem;
-  right: 2.5rem;
+  left: 2.2rem;
+  right: 2.2rem;
   height: 5rem;
   background-color: white;
   border-radius: 1rem;
@@ -122,8 +123,8 @@ body {
 .expanded-navbar-small {
   position: fixed;
   top: 1.5rem;
-  left: 2.5rem;
-  right: 2.5rem;
+  left: 2.2rem;
+  right: 2.2rem;
   height: calc(100vh - 3rem);
   box-sizing: border-box;
   overflow: hidden;
