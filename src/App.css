@@ -101,7 +101,12 @@ body {
   border: none;
   font-weight: bold;
   border-radius: 0.5rem;
+}
 
+.navbar .right button:hover {
+  color:white;
+  background-color: black;
+  cursor:pointer;
 }
 
 .collapsed-navbar-small {
@@ -492,10 +497,19 @@ body {
   gap: 1rem;
 }
 
+.img-container {
+  overflow: hidden;
+}
+
 .recent-trips-card img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.recent-trips-card img:hover {
+  transform: scale(1.3);
 }
 
 .recent-trips-card p {
