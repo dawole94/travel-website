@@ -108,7 +108,7 @@ body {
   top: 1.5rem;
   left: 2.5rem;
   right: 2.5rem;
-  height: 6rem;
+  height: 5rem;
   background-color: white;
   border-radius: 1rem;
 
@@ -134,7 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 2rem 0;
   z-index: 9;
 }
 
@@ -174,12 +174,17 @@ body {
 }
 
 @media (min-width: 640px) {
+
+  .collapsed-navbar-small {
+    height: 7rem;
+  }
+
   .expanded-navbar-small a {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .expanded-navbar-small button {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .collapsed-navbar-small h1 {
@@ -190,7 +195,7 @@ body {
     font-size: 5rem;
   }
 
-  .collapsed-navbar-small .hamburger-menu, .collapsed-navbar-small .cross {
+   .hamburger-menu, .cross {
     font-size: 4rem;
   }
 
@@ -200,20 +205,66 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+  .collapsed-navbar-small {
+    height: 8rem;
+  }
+
   .expanded-navbar-small a {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .expanded-navbar-small button {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .collapsed-navbar-small h1, .expanded-navbar-small-top h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .hamburger-menu, .cross {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+    @media(max-height: 600px) {
+      .collapsed-navbar-small {
+        height: 5rem;
+      }
+    
+      .expanded-navbar-small a {
+        font-size: 2rem;
+      }
+    
+      .expanded-navbar-small button {
+        font-size: 2rem;
+      }
+    
+      .collapsed-navbar-small h1, .expanded-navbar-small-top h1 {
+        font-size: 2.5rem;
+      }
+    
+      .hamburger-menu, .cross {
+        font-size: 2rem;
+      }
+    }
+}
+
+@media (max-width: 1280px) {
+
+  .navbar {
+    gap: 3rem;
+  }
+
+  .navbar .right {
+    gap: 1rem;
+  }
+
+  .navbar .right ul {
+    gap: 2rem;
+  }
+
+  .navbar .right button {
+    font-size: 1rem;
   }
 }
 

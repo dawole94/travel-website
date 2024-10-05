@@ -21,6 +21,7 @@ function ExpandedNavbarSmall() {
 
   return(
     <div className="expanded-navbar-small">
+      <div>abc</div>
       <a href="http://localhost:5173/"><IoMdHome /> Home</a>
       <a href="http://localhost:5173/about"><IoInformationCircleSharp /> About</a>
       <a href="http://localhost:5173/service"><FaBriefcase /> Service</a>
