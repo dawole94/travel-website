@@ -128,9 +128,13 @@ body {
 .expanded-navbar-small {
   position: fixed;
   top: 1.5rem;
-  left: 2.2rem;
-  right: 2.2rem;
+  /* left: 2.2rem; */
+  /* left: -1000rem; */
+  /* right: 2.2rem; */
+  transform: translateX(-100%);
+  
   height: calc(100vh - 3rem);
+  width: calc(100% - 4.4rem);
   box-sizing: border-box;
   overflow: hidden;
   background-color: white;
@@ -142,6 +146,15 @@ body {
   justify-content: space-between;
   padding: 2rem 0;
   z-index: 9;
+  transition: transform 0.3s ease;
+}
+
+/* .non-active {
+  transform: translateX(-100%);
+} */
+
+.active {
+  transform: translateX(2.2rem);
 }
 
 .expanded-navbar-small-top {

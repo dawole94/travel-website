@@ -5,16 +5,17 @@ import ExpandedNavbarSmall from "./ExpandedNavbarSmall";
 
 function NavbarSmall() {
 
-  const [showExpanded, setShowExpanded] = useState(false);
+  // const [showExpanded, setShowExpanded] = useState(false);
 
-  function toggleMenu() {
-    setShowExpanded(!showExpanded)
-  }
+  // function toggleMenu() {
+  //   setShowExpanded(!showExpanded)
+  // }
 
   return(
     <>
-      <CollapsedNavbarSmall toggleMenu={toggleMenu}/>
-      {showExpanded ? <ExpandedNavbarSmall/> : null}
+      <CollapsedNavbarSmall/>
+      {/* {showExpanded ? <ExpandedNavbarSmall/> : null} */}
+      <ExpandedNavbarSmall/>
     </>
   )
 }
