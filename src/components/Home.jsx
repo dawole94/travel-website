@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+// import '../App.css'
 import MainImage from './MainImage'
 import PopularDestinations from './PopularDestinations';
 import RecentTrips from './RecentTrips';
