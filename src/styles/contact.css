@@ -65,3 +65,13 @@
   color: white;
   cursor: pointer;
 }
+
+.form input:hover {
+  border-color: black;
+  cursor: pointer;
+}
+
+.textarea:hover {
+  border-color: black;
+  cursor: pointer;
+}
